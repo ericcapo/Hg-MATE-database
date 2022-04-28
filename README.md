@@ -71,13 +71,14 @@ required for environmental reference sequences (e.g. contigs).
 metadata field is required for environmental reference sequences (e.g. contigs).
 ● Version: refers to version of Hg-MATE-Db
 
-<h3 class="section-title underline">Methodology</h3>
-To compile the catalogue, we started by combining two previously published HgcAB databases: Gionfriddo et al. 2020 (https://doi.org/10.3389/fmicb.2020.541554) and McDaniel et al. 2020 (https://doi.org/10.1128/mSystems.00299-20). We then added HgcAB sequences pulled from three public data repositories: NCBI GenBank (https://www.ncbi.nlm.nih.gov/genbank/), JGIIMG GOLD (https://gold.jgi.doe.gov/), and GTDB release 89 (https://gtdb.ecogenomic.org/). Sequences were compiled on 23 October 2020. HgcAB sequences were identified in these databases by hmmsearch with HgcA and HgcB hmm profiles from Gionfriddo et al. 2020.
+<h3 class="section-title underline">Methodology (how we create the database v1)</h3>
+We collated the HgcAB databases from <a href="https://doi.org/10.3389/fmicb.2020.541554" target="_blank"><b>Gionfriddo et al. 2020</b></a> and <a href="https://doi.org/10.1128/mSystems.00299-20" target="_blank"><b>McDaniel et al. 2020</b></a> and added HgcAB amino acid sequences pulled from three public data repositories: <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank"><b>NCBI GenBank</b></a>, <a href="https://gold.jgi.doe.gov/" target="_blank"><b>JGI-IMG GOLD</b></a> <a href="https://gtdb.ecogenomic.org/" target="_blank"><b>GTDB release 89</b></a> obtained on 23 October 2020. HgcAB amino acid sequences were identified in these databases by hmmsearch with HgcA and HgcB HMM profiles from <a href="https://doi.org/10.3389/fmicb.2020.541554" target="_blank"><b>Gionfriddo et al. 2020</b></a>.
+  
 Methods for specific parts of the Hg-MATE-Db are as follows.
 ● Multiple sequence alignments (MSA) were built with MUSCLE implemented in MEGAX (Kumar et al., 2018) with the cluster method UPGMA
 ● HMM profiles for HgcA and HgcB encoding genes were built from MSAs using the hmmbuild function from the hmmer software (3.2.1 version, Finn et al., 2011,
 http://hmmer.org/)
-● Reference packages were constructed using the program Taxtastic (https://github.com/fhcrc/taxtastic) for HgcA(B) amino acid sequences from ISO-CELMAGs in the Hg-MATE-Db.v1. For example, the methods for the full HgcA reference package are:
+● Reference packages were constructed using Taxtastic (https://github.com/fhcrc/taxtastic) for HgcA(B) amino acid sequences from ISO-CELMAGs in the Hg-MATE-Db.v1. For example, the methods for the full HgcA reference package are:
 ○ RAxML_bipartitions.Hg-MATE-Db.v1.ISOCELMAG-HgcA-Full-ML-100bs-treerooted: a phylogenetic tree estimated by RAxML using the GAMMA model of rate heterogeneity and LG substitution matrix. Phylogeny was inferred from alignment of HgcA (or concatenated HgcA and HgcB sequences). The tree is rooted by HgcA paralog sequences, carbon monoxide dehydrogenases (PF03599) from non-HgcA organisms Candidatus Omnitrophica bacterium CG1_02_41_171 and Thermosulfurimonas dismutans. These organisms were chosen because of their distinct phylogeny to HgcA+ organisms. Confidence values on branches are calculated from 100 bootstraps. 
 ○ RAxML_info.Hg-MATE-Db.v1.ISOCELMAG_HgcA_full-ref-tree-ML100bs: information file for phylogenetic tree produced by RAxML above
 ○ Hg-MATE-Db.v1.ISOCELMAG_HgcA_full.hmm: the HMM model built using hmmbuild from the stockholm-formatted amino acid sequence alignment
