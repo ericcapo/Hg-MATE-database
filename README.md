@@ -4,15 +4,9 @@
 <h3 class="section-title underline">Background</h3>
 <p>Microorganisms play a significant role in regulating the form and fate of mercury (Hg) in aquatic and terrestrial ecosystems. Microbes with the hgcAB gene pair can produce a more toxic, and bioaccumulative form of Hg, methylmercury (MeHg). Microbes that possess the mer operon can demethylate and/or reduce Hg species as part of a detoxification mechanism. Improved techniques for capturing hgcAB and mer presence and diversity are necessary for identifying the major microbial players in environmental Hg cycling. The primary goal of the database Hg-MATE is to provide an up-to-date collated resource of Hg-cycling genes from pure culture and environmental microbial genomes and meta-omic datasets. The version 1 of the database contains an hgcAB dataset with resources for identifying key microbial producers of the toxin MeHg. Future versions of the Hg-MATE-Db will also include (i) hgcAB sequences from high-throughput sequencing and clone datasets and (ii) a mer dataset, which will contain resources for identifying genes of the mer-operon that encode for demethylation of organomercurials (merB), reduction of inorganic Hg(II) (merA), as well as operon regulation (merR), and Hg transport across the cell (merTPC). </p>
 
-<h3 class="section-title underline">Description</h3>
-The version 1 (v1) of the database was released 14 January 2021, and contains a catalogue of 1053 unique HgcA/B amino acid sequences. s (Table 1). We categorized the HgcAB amino acid sequences into four types depending on whether they were encoded in:
-• pure culture/environmental microbial isolates (ISO)
-• single-cell genome sequences (CEL)
-• metagenome-assembled genomes (MAGs)
-• environmental meta-omic contig (CON)
+<h3 class="section-title underline">Description of the gene catalogue</h3>
+The hgcAB gene catalogue of the version 1 (Hg-MATE-Db.v1.01142021.xlsx) was released 14 January 2021 and contains a catalogue of 1053 unique HgcA/B amino acid sequences. There, HgcAB amino acid sequences are categorized into four types depending on whether they were encoded in pure culture/environmental microbial isolates (<b>ISO</b>), single-cell genome sequences (<b>CEL</b>), metagenome-assembled genomes (<b>MAGs</b>) and environmental meta-omic contig (<b>CON</b>). Included in the database are amino acid sequences of HgcA, HgcB, and concatenated HgcA and HgcB. If hgcB is not co-localized with hgcA in the genome and/or cannot be identified, then ‘na’ will be listed in the ‘HgcB’ sequence column. 
   
-Only sequences with genomic identifying information (i.e. ‘ISO’, ‘CEL’, ‘MAG’) were used to compile resources for identifying and classifying HgcAB. Included in the database are amino acid sequences of HgcA, HgcB, and concatenated HgcA and HgcB. If hgcB is not co-localized with hgcA in the genome and/or cannot be identified, then ‘na’ will be listed in the ‘HgcB’ sequence column. To our knowledge, both genes need to be present and encode functional proteins for a microbe to methylate Hg (see <a href="https://www.science.org/doi/full/10.1126/science.1230667" target="_blank"><b>Parks et al. 2013</b></a> and <a href="https://journals.asm.org/doi/10.1128/AEM.00217-15?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank"><b>Smith et al. 2015</b></a>). One reason hgcB may not be identifiable in a genome is because HgcB is highly homologous to other 4Fe-4S ferredoxins, and therefore hgcB can be difficult to differentiate from other ferredoxin-encoding genes if not co-localized with hgcA. In addition, hgcB may be missing from ‘MAGs’, ‘CEL’ and ‘CON’ sequences due to incomplete coverage of the genome or incomplete contig assembly. Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined in <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a>. These sequences are provided in the ‘HgcA’ column, and labeled ‘fused HgcAB’ in the HgcB column. These ‘fused HgcAB’ sequences should be treated with caution for it is unclear whether they encode for Hg-methylation capability. While they share significant sequence homology to HgcA and HgcB in confirmed Hg-methylators, to date no organism with a ‘fused HgcAB’ has been shown to methylate Hg in culture (see <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a> and <a href="https://journals.asm.org/doi/10.1128/mBio.02403-17" target="_blank"><b>Gilmour et al. 2018</b></a>)
-
 Table 1. Summary of HgcAB sequence types
 Genome Type Total HgcA(B)
 sequences
@@ -23,19 +17,19 @@ ISO 204 173 10 21
 CEL 29 4 18 7
 MAG 787 696 17 74
 CON 33 9 0 21 (3)
-• ISO = pure culture/environmental microbial isolates
-• CEL = single-cell genome sequences
-• MAG = metagenome-assembled genomes
-• CON = environmental meta-omic contig
+  
+To our knowledge, both genes need to be present and encode functional proteins for a microbe to methylate Hg (see <a href="https://www.science.org/doi/full/10.1126/science.1230667" target="_blank"><b>Parks et al. 2013</b></a> and <a href="https://journals.asm.org/doi/10.1128/AEM.00217-15?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank"><b>Smith et al. 2015</b></a>). One reason hgcB may not be identifiable in a genome is because HgcB is highly homologous to other 4Fe-4S ferredoxins, and therefore hgcB can be difficult to differentiate from other ferredoxin-encoding genes if not co-localized with hgcA. In addition, hgcB may be missing from ‘MAGs’, ‘CEL’ and ‘CON’ sequences due to incomplete coverage of the genome or incomplete contig assembly. 
+<br>
+Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined in <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a>. These sequences are provided in the ‘HgcA’ column, and labeled ‘fused HgcAB’ in the HgcB column. These ‘fused HgcAB’ sequences should be treated with caution for it is unclear whether they encode for Hg-methylation capability. While they share significant sequence homology to HgcA and HgcB in confirmed Hg-methylators, to date no organism with a ‘fused HgcAB’ has been shown to methylate Hg in culture (see <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a> and <a href="https://journals.asm.org/doi/10.1128/mBio.02403-17" target="_blank"><b>Gilmour et al. 2018</b></a>)
+
 
 <h3 class="section-title underline">Resources</h3>
-The resources within the Hg-MATE-Db.v1 include:
+ The resources within the database v1 include:
 ● ‘Hg-MATE-Db.v1.01142021.xlsx’: Excel spreadsheet catalogue with amino acid sequences and organism metadata 
 ● FASTA files containing amino acid sequences of HgcA (‘_HgcA.fas’), HgcB (‘_HgcB.fas’), and concatenated HgcA-HgcB sequences (‘_Hgc.fas’) from pure culture/environmental isolates, single-cell genome sequences, and metagenome-assembled genomes (‘ISOCELMAG’)
 ● FASTA formatted alignments of amino acid sequences of HgcA (‘_HgcA_msa.fas’), HgcB (‘_hgcB_msa.fas’), and concatenated HgcA-HgcB sequences (‘_Hgc_msa.fas’) from pure culture/environmental isolates, single-cell genome sequences, and metagenome assembled genomes (‘ISOCELMAG’) 
-● Hidden Markov models of aligned HgcA (‘_HgcA.hmm’), HgcB (‘_HgcB.hmm’), and concatenated HgcA-HgcB (‘_Hgc.hmm’) built from pure culture/environmental isolates, single-cell genome sequences, and metagenome-assembled genomes (‘ISOCELMAG’) 
-● Three reference packages that can be used to identify and classify: 1) the cap-helix encoding region of HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_CH.refpkg), for example in Desulfovibrio desulfuricans ND132, this encompasses the CdhD-like encoding region, sites ~37-156 of HgcA (https://www.uniprot.org/uniprot/F0JBF0); 2) full HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_Full.refpkg); and 3) concatenated HgcA and HgcB (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA-HgcB.refpkg). Each reference package contains sequence alignments, hmm model, phylogenetic tree, and NCBI
-taxonomy.
+● Hidden Markov models of aligned HgcA (‘_HgcA.hmm’), HgcB (‘_HgcB.hmm’), and concatenated HgcA-HgcB (‘_Hgc.hmm’) built from pure culture/environmental isolates, single-cell genome sequences, and metagenome-assembled genomes (‘ISOCELMAG’). 
+● Three reference packages that can be used to identify and classify: 1) the cap-helix encoding region of HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_CH.refpkg), for example in Desulfovibrio desulfuricans ND132, this encompasses the CdhD-like encoding region, sites ~37-156 of HgcA (https://www.uniprot.org/uniprot/F0JBF0); 2) full HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_Full.refpkg); and 3) concatenated HgcA and HgcB (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA-HgcB.refpkg). Each reference package contains sequence alignments, hmm model, phylogenetic tree, and NCBI taxonomy.
 
 <h3 class="section-title underline">Metadata</h3>
 The following metadata is provided for each sequence in the catalogue:
