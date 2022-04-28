@@ -1,18 +1,16 @@
-# hg-mate
-
-Hg-MATE-Db: Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database
+# Hg-MATE-Db: Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database
 
 <div class="intro">
 <h3 class="section-title underline">Background</h3>
 <p>Microorganisms play a significant role in regulating the form and fate of mercury (Hg) in aquatic and terrestrial ecosystems. Microbes with the hgcAB gene pair can produce a more toxic, and bioaccumulative form of Hg, methylmercury (MeHg). Microbes that possess the mer operon can demethylate and/or reduce Hg species as part of a detoxification mechanism. Improved techniques for capturing hgcAB and mer presence and diversity are necessary for identifying the major microbial players in environmental Hg cycling. The primary goal of the Hg-MATE-Db is to provide an up-to-date collated resource of Hg-cycling genes from pure culture and environmental microbial genomes and meta-omic datasets. The database will be updated regularly.</p>
 <br>
-</div>
+
 
 The Hg-MATE-Db.v1 contains an hgcAB dataset with resources for identifying key microbial producers of the toxin MeHg. Future versions of the Hg-MATE-Db will also include hgcAB sequences from high-throughput sequencing and clone datasets. Future versions will also contain a mer dataset, which will contain resources for identifying genes of the mer-operon that encode for demethylation of organomercurials (merB), reduction of inorganic Hg(II) (merA), as well as operon regulation (merR), and Hg transport across the cell (merTPC). 
 
 The latest release, version 1 (v1), was compiled on 23 October 2020 and finalized on 14 January 2021, and contains an hgcAB dataset. The catalogue contains 1053 unique HgcA/B amino acid sequences. 
 
-# Description
+<h3 class="section-title underline">Description</h3>
 The latest release, version 1 (v1), was compiled on 23 October 2020 and finalized on 14 January 2021, and contains an hgcAB dataset. The catalogue contains 1053 unique HgcA/B amino acid sequences (Table 1). We categorized the HgcAB amino acid sequences into four types depending on whether they were encoded in:
 • pure culture/environmental microbial isolates (ISO)
 • single-cell genome sequences (CEL)
@@ -38,7 +36,7 @@ CON 33 9 0 21 (3)
 • MAG = metagenome-assembled genomes
 • CON = environmental meta-omic contig
 
-# Resources
+<h3 class="section-title underline">Resources</h3>
 The resources within the Hg-MATE-Db.v1 include:
 ● ‘Hg-MATE-Db.v1.01142021.xlsx’: Excel spreadsheet catalogue with amino acid sequences and organism metadata 
 ● FASTA files containing amino acid sequences of HgcA (‘_HgcA.fas’), HgcB (‘_HgcB.fas’), and concatenated HgcA-HgcB sequences (‘_Hgc.fas’) from pure culture/environmental isolates, single-cell genome sequences, and metagenome-assembled genomes (‘ISOCELMAG’)
@@ -47,7 +45,7 @@ The resources within the Hg-MATE-Db.v1 include:
 ● Three reference packages that can be used to identify and classify: 1) the cap-helix encoding region of HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_CH.refpkg), for example in Desulfovibrio desulfuricans ND132, this encompasses the CdhD-like encoding region, sites ~37-156 of HgcA (https://www.uniprot.org/uniprot/F0JBF0); 2) full HgcA (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_Full.refpkg); and 3) concatenated HgcA and HgcB (Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA-HgcB.refpkg). Each reference package contains sequence alignments, hmm model, phylogenetic tree, and NCBI
 taxonomy.
 
-# Metadata
+<h3 class="section-title underline">Metadata</h3>
 The following metadata is provided for each sequence in the catalogue:
 ● MATE ID: unique identifier for Hg-MATE database
 ● Sequence name as [Organism Name]_Phylum/Class
@@ -81,7 +79,7 @@ required for environmental reference sequences (e.g. contigs).
 metadata field is required for environmental reference sequences (e.g. contigs).
 ● Version: refers to version of Hg-MATE-Db
 
-# Methodology
+<h3 class="section-title underline">Methodology</h3>
 To compile the catalogue, we started by combining two previously published HgcAB databases: Gionfriddo et al. 2020 (https://doi.org/10.3389/fmicb.2020.541554) and McDaniel et al. 2020 (https://doi.org/10.1128/mSystems.00299-20). We then added HgcAB sequences pulled from three public data repositories: NCBI GenBank (https://www.ncbi.nlm.nih.gov/genbank/), JGIIMG GOLD (https://gold.jgi.doe.gov/), and GTDB release 89 (https://gtdb.ecogenomic.org/). Sequences were compiled on 23 October 2020. HgcAB sequences were identified in these databases by hmmsearch with HgcA and HgcB hmm profiles from Gionfriddo et al. 2020.
 Methods for specific parts of the Hg-MATE-Db are as follows.
 ● Multiple sequence alignments (MSA) were built with MUSCLE implemented in MEGAX (Kumar et al., 2018) with the cluster method UPGMA
@@ -100,7 +98,7 @@ HgcA MSA and paralog sequences using MUSCLE in Geneious Prime. Sites with >90% g
 ○ Taxa.csv: a curated NCBI taxonomy database for all sequences in the reference package. Used for classifying sequences using pplacer (Matsen et al. 2010,
 https://doi.org/10.1186/1471-2105-11-538). Taxonomy was pulled from the NCBI tax dump version 05-31-2020. Please note, taxonomy for some sequences may have changed since then. 
 
-# Recommended Usage
+<h3 class="section-title underline">Recommended Usage</h3>
 For detection of hgcAB in metagenomes or MAGs: we recommend using the HgcA and HgcB HMM profiles and MSA files generated from reference sequences of isolates, single-cell genomes, and metagenome-assembled genomes (ISOCELMAG). The Hgc HMM profile and MSA file (i.e. concatenated HgcA and HgcB amino acid sequences) should be used when HgcA and HgcB amino acid sequences are detected in the same contig/scaffold/MAG in your analysis. For an example of how to work with these sorts of datasets, see Capo et al. 2020 (https://doi.org/10.3389/fmicb.2020.574080), Peterson et al. 2020 (https://doi.org/10.1021/acs.est.0c05435) and Lin et al. 2020 (https://doi.org/10.1101/2020.06.03.132969). The reference packages can be used for phylogenetic analysis of HgcA(B) sequences from amplicon sequencing or meta-omic datasets. An example workflow for how to use the Hg-MATE-Db reference packages for identifying and classifying HgcA(B) sequences using hmmer (http://hmmer.org/) and pplacer (Matsen et al. 2010, https://doi.org/10.1186/1471-2105-11-538) is provided below. Further analysis and visualizations can be produced from the pplacer output files, i.e. the ‘jplace’ placement file and ‘sqlite’ classification database, using the R packages BoSSA and phyloseq in R (version 3.5.1 or later). For a more in-depth tutorial for how to use these types of reference packages for identifying and classifying HgcA sequences in highthroughput sequencing data, see Gionfriddo et al. 2020 (https://doi.org/10.3389/fmicb.2020.541554) and the accompanying tutorial (https://caitlingio.com/tutorial-for-hgcab-amplicon-sequencing-data/).
 1) Start with a FASTA-formatted file of predicted protein sequences that you would like to classify (for example, translated amino acid sequences from amplicon sequencing data, or predicted open reading frames from a metagenomic dataset), sequences-to-be classified. fasta. Use hmmsearch to filter out non-HgcA sequences (i.e. those that do not align with reference HgcA sequences in HMM model, Hg-MATEDb. v1.ISOCELMAG_HgcA_full.hmm from reference package) using an inclusion E-value cutoff. We suggest starting with an E-value of 10-25 (1E-25), although this will differ by dataset. The E-value may need to be adjusted higher or lower in order to exclude non-HgcA CdhD-encoding sequences without losing HgcA. Look at sequences in the hmmtable and hmm-output that are around the inclusion threshold cut-off to determine the best cut-off for your dataset). Outputs include a table of query sequences and E-values (hmm_table), text file showing alignment of all query sequences with reference HgcA and E-values (hmm_output) and alignment of query sequences that passed inclusion threshold with reference sequences (hmm_alignment). hmmsearch --tblout hmm_table -o hmm_output --incE 1E-25 -A hmm_alignment Hg-MATEDb.v1.ISOCELMAG_HgcA_full.hmm sequences-to-be-classified.fasta
 2) Align filtered query sequences from previous step (hmm_alignment) to stockholm formatted alignment of reference sequences in reference package (Hg-MATEDb.v1.ISOCELMAG_HgcA_full.stockholm) using hmm model (Hg-MATEDb. v1.ISOCELMAG_HgcA_full.hmm) producing a Stockholm formatted alignment of filtered query sequences and reference sequences (hmm_alignment.sto) that can be used for classification hmmalign -o hmm_alignment.sto -- mapali Hg-MATE-Db.v1.ISOCELMAG_HgcA_full.stockholm Hg-MATE-Db.v1.ISOCELMAG_HgcA_full.hmm hmm_alignment
@@ -117,12 +115,12 @@ specify that the maximum number of placements to keep is one (--keep-at-most 1),
 8) Use ‘guppy tog’ to produce a visualization showing placements of query sequences on reference tree. The Newick-formatted tree can be opened in tree-viewing software such as archeopteryx (https://github.com/cmzmasek/archaeopteryx-js) or FigTree (https://github.com/rambaut/figtree/releases). 
 ```guppy tog --pp -o classifications_on_tree.nwk hmm_alignment.jplace``` 
 
-# History
+<h3 class="section-title underline">Contributors</h3>
 This catalogue of HgcAB amino acid sequences was primarily compiled by Caitlin Gionfriddo (Smithsonian Environmental Research Center, USA), Eric Capo (Umeå University, SE), and Benjamin Peterson (University of Wisconsin-Madison, USA), with contributions from Heyu Lin (University of Melbourne, AU), Daniel Jones (New Mexico Institute of Mining and Technology, USA), Andrea García Bravo (Institut de Ciències del Mar, Institute of Marine Sciences, ES), Stefan Bertilsson (SLU, Sveriges lantbruksuniversitet, Swedish University of Agricultural Sciences, SE), John Moreau (University of Glasgow, UK), Katherine McMahon (University of
 Wisconsin, USA), Dwayne Elias (Oak Ridge National Laboratory, USA), and Cynthia Gilmour (Smithsonian Environmental Research Center, USA).
 
-# Citation
-Please cite us when using the Hg-MATE-Db in your work.
-Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J.,
-McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021.
-doi:10.25573/serc.13105370
+<h3 class="section-title underline">How to cite us</h3>
+- For version 1
+Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021. doi:10.25573/serc.13105370
+  
+  </div>
