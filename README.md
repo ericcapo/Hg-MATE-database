@@ -13,19 +13,14 @@ The version 1 (v1) of the database was released 14 January 2021, and contains a 
 • metagenome-assembled genomes (MAGs)
 • environmental meta-omic contig (CON)
   
-Only sequences with genomic identifying information (i.e. ‘ISO’, ‘CEL’, ‘MAG’) were used to compile resources for identifying and classifying HgcAB. Included in the database are amino acid sequences of HgcA, HgcB, and concatenated HgcA and HgcB. If hgcB is not co-localized with hgcA in the genome and/or cannot be identified, then ‘na’ will be listed in the ‘HgcB’ sequence column. To our knowledge, both genes need to be present and encode functional proteins for a microbe to methylate Hg (see <a href="https://www.science.org/doi/full/10.1126/science.1230667" target="_blank"><b>Parks et al. 2013</b></a> and <a href="https://journals.asm.org/doi/10.1128/AEM.00217-15?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank"><b>Smith et al. 2015</b></a>
-
-One reason hgcB may not be identifiable in a genome is because HgcB is highly homologous to other 4Fe-4S ferredoxins, and therefore hgcB can be difficult to differentiate from other ferredoxin-encoding genes if not co-localized with hgcA. In addition, hgcB may be missing from ‘MAGs’, ‘CEL’ and ‘CON’ sequences due to incomplete coverage of the genome or incomplete contig assembly. Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined in <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a>. These sequences are provided in the ‘HgcA’ column, and labeled ‘fused HgcAB’ in the HgcB column. These ‘fused HgcAB’ sequences should be treated with caution for it is unclear whether they encode for Hg-methylation capability. While they share significant sequence homology to HgcA and HgcB in confirmed Hg-methylators, to date no organism with a ‘fused HgcAB’ has been shown to methylate Hg in culture (see <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a> and <a href="https://journals.asm.org/doi/10.1128/mBio.02403-17" target="_blank"><b>Gilmour et al. 2018</b></a>)
+Only sequences with genomic identifying information (i.e. ‘ISO’, ‘CEL’, ‘MAG’) were used to compile resources for identifying and classifying HgcAB. Included in the database are amino acid sequences of HgcA, HgcB, and concatenated HgcA and HgcB. If hgcB is not co-localized with hgcA in the genome and/or cannot be identified, then ‘na’ will be listed in the ‘HgcB’ sequence column. To our knowledge, both genes need to be present and encode functional proteins for a microbe to methylate Hg (see <a href="https://www.science.org/doi/full/10.1126/science.1230667" target="_blank"><b>Parks et al. 2013</b></a> and <a href="https://journals.asm.org/doi/10.1128/AEM.00217-15?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank"><b>Smith et al. 2015</b></a>). One reason hgcB may not be identifiable in a genome is because HgcB is highly homologous to other 4Fe-4S ferredoxins, and therefore hgcB can be difficult to differentiate from other ferredoxin-encoding genes if not co-localized with hgcA. In addition, hgcB may be missing from ‘MAGs’, ‘CEL’ and ‘CON’ sequences due to incomplete coverage of the genome or incomplete contig assembly. Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined in <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a>. These sequences are provided in the ‘HgcA’ column, and labeled ‘fused HgcAB’ in the HgcB column. These ‘fused HgcAB’ sequences should be treated with caution for it is unclear whether they encode for Hg-methylation capability. While they share significant sequence homology to HgcA and HgcB in confirmed Hg-methylators, to date no organism with a ‘fused HgcAB’ has been shown to methylate Hg in culture (see <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a> and <a href="https://journals.asm.org/doi/10.1128/mBio.02403-17" target="_blank"><b>Gilmour et al. 2018</b></a>)
 
 Table 1. Summary of HgcAB sequence types
 Genome Type Total HgcA(B)
 sequences
-Encodes both
-HgcA and HgcB
-Encodes fused
-HgcAB
-Only HgcA (or
-HgcB) present
+Encodes both HgcA and HgcB
+Encodes fused HgcAB
+Only HgcA (or HgcB) present
 ISO 204 173 10 21
 CEL 29 4 18 7
 MAG 787 696 17 74
