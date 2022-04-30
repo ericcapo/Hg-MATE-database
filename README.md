@@ -7,6 +7,8 @@
 <h3 class="section-title underline"> Brief description of the gene catalogue</h3>
 The hgcAB gene catalogue of the version 1 (Hg-MATE-Db.v1.01142021.xlsx) was released 14 January 2021 and contains a catalogue of 1053 unique HgcA/B amino acid sequences. There, HgcAB amino acid sequences are categorized into four types depending on whether they were encoded in pure culture/environmental microbial isolates (<b>ISO</b>), single-cell genome sequences (<b>CEL</b>), metagenome-assembled genomes (<b>MAGs</b>) and environmental meta-omic contig (<b>CON</b>). Included in the database are amino acid sequences of HgcA, HgcB, and concatenated HgcA and HgcB. If hgcB is not co-localized with hgcA in the genome and/or cannot be identified, then ‘na’ will be listed in the ‘HgcB’ sequence column. We collated the HgcAB databases from <a href="https://doi.org/10.3389/fmicb.2020.541554" target="_blank"><b>Gionfriddo et al. 2020</b></a> and <a href="https://doi.org/10.1128/mSystems.00299-20" target="_blank"><b>McDaniel et al. 2020</b></a> and added HgcAB amino acid sequences pulled from three public data repositories: <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank"><b>NCBI GenBank</b></a>, <a href="https://gold.jgi.doe.gov/" target="_blank"><b>JGI-IMG GOLD</b></a> <a href="https://gtdb.ecogenomic.org/" target="_blank"><b>GTDB release 89</b></a> obtained on 23 October 2020. HgcAB amino acid sequences were identified in these databases by hmmsearch with HgcA and HgcB HMM profiles from <a href="https://doi.org/10.3389/fmicb.2020.541554" target="_blank"><b>Gionfriddo et al. 2020</b></a>. Detailed description of the catalogue, how it is structured and how it was created is provided in the README.pdf of the hg-mate_v1 folder. 
 
+</div>
+
 <h3 class="section-title underline">Resources</h3>
  The resources within the database v1 include:
 ● ‘Hg-MATE-Db.v1.01142021.xlsx’: Excel spreadsheet catalogue with amino acid sequences and organism metadata 
@@ -45,4 +47,3 @@ Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined
 <h3 class="section-title underline">How to cite us</h3>
 Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021. doi:10.25573/serc.13105370
   
-  </div>
