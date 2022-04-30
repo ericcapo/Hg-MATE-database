@@ -30,7 +30,9 @@ specify that the maximum number of placements to keep is one (--keep-at-most 1),
 5) Assign taxonomy to query sequences based on placement from step 3 (hmm_alignment.jplace). If you used posterior probability in step 3, also specify it here (--pp). This step will use the lowest common ancestor of the branch in the reference tree to classify the query sequences, and will use a 90% confidence cut-off for identification as default. Output will write classifications to the sqlite database made in the previous step (classify_output).
 ```guppy classify -c Hg-MATE-Db.v1.01142021_ISOCELMAG_HgcA_Full.refpkg --pp --sqlite classify_output hmm_alignment.jplace```
 6) Use ‘guppy to_csv’ to write classifications to csv file: 
-7) ```guppy to_csv --point-mass --pp -o classifications.csv hmm_alignment.jplace```
+```
+guppy to_csv --point-mass --pp -o classifications.csv hmm_alignment.jplace
+```
 8) Use ‘guppy tog’ to produce a visualization showing placements of query sequences on reference tree. The Newick-formatted tree can be opened in tree-viewing software such as archeopteryx (https://github.com/cmzmasek/archaeopteryx-js) or FigTree (https://github.com/rambaut/figtree/releases). 
 ```guppy tog --pp -o classifications_on_tree.nwk hmm_alignment.jplace``` 
 
@@ -38,11 +40,12 @@ specify that the maximum number of placements to keep is one (--keep-at-most 1),
 This catalogue of HgcAB amino acid sequences was primarily compiled by Caitlin Gionfriddo (Smithsonian Environmental Research Center, USA), Eric Capo (Umeå University, SE), and Benjamin Peterson (University of Wisconsin-Madison, USA), with contributions from Heyu Lin (University of Melbourne, AU), Daniel Jones (New Mexico Institute of Mining and Technology, USA), Andrea García Bravo (Institut de Ciències del Mar, Institute of Marine Sciences, ES), Stefan Bertilsson (SLU, Sveriges lantbruksuniversitet, Swedish University of Agricultural Sciences, SE), John Moreau (University of Glasgow, UK), Katherine McMahon (University of
 Wisconsin, USA), Dwayne Elias (Oak Ridge National Laboratory, USA), and Cynthia Gilmour (Smithsonian Environmental Research Center, USA).
 
+<div class="intro">
 <h3 class="section-title underline">Some notes</h3>
 To our knowledge, both genes need to be present and encode functional proteins for a microbe to methylate Hg (see <a href="https://www.science.org/doi/full/10.1126/science.1230667" target="_blank"><b>Parks et al. 2013</b></a> and <a href="https://journals.asm.org/doi/10.1128/AEM.00217-15?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank"><b>Smith et al. 2015</b></a>). One reason hgcB may not be identifiable in a genome is because HgcB is highly homologous to other 4Fe-4S ferredoxins, and therefore hgcB can be difficult to differentiate from other ferredoxin-encoding genes if not co-localized with hgcA. In addition, hgcB may be missing from ‘MAGs’, ‘CEL’ and ‘CON’ sequences due to incomplete coverage of the genome or incomplete contig assembly. 
 <br>
 Some hgcAB genes are predicted to encode a ‘fused HgcAB protein’ (as defined in <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a>. These sequences are provided in the ‘HgcA’ column, and labeled ‘fused HgcAB’ in the HgcB column. These ‘fused HgcAB’ sequences should be treated with caution for it is unclear whether they encode for Hg-methylation capability. While they share significant sequence homology to HgcA and HgcB in confirmed Hg-methylators, to date no organism with a ‘fused HgcAB’ has been shown to methylate Hg in culture (see <a href="https://www.science.org/doi/10.1126/sciadv.1500675" target="_blank"><b>Podar et al. 2015</b></a> and <a href="https://journals.asm.org/doi/10.1128/mBio.02403-17" target="_blank"><b>Gilmour et al. 2018</b></a>)
-
+</div>
   
 <h3 class="section-title underline">How to cite us</h3>
 Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021. doi:10.25573/serc.13105370
