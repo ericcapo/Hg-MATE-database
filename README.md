@@ -25,6 +25,6 @@ The Hg-MATE v1.01142021 was primarily compiled by Caitlin Gionfriddo (Smithsonia
 
 ## How to cite us
 <p align="justify">
-Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021. doi:10.25573/serc.13105370 
+Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021 : Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database <a href="doi.org/10.5281/zenodo.6687122" target="_blank"><b>doi.org/10.5281/zenodo.6687122</b></a>
 </p>
 
