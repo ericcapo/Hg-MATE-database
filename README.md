@@ -1,4 +1,4 @@
-# Hg-MATE-Db: Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database
+![image](https://github.com/ericcapo/Hg-MATE-database/assets/10795529/f57b1e9d-159f-4f47-b986-4a1d747f3bcb)# Hg-MATE-Db: Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database
 <p align="justify">
 Microorganisms play a significant role in regulating the form and fate of mercury (Hg) in aquatic and terrestrial ecosystems. Microbes with the hgcAB gene pair can produce a more toxic, and bioaccumulative form of Hg, methylmercury (MeHg). Microbes that possess the mer operon can demethylate and/or reduce Hg species as part of a detoxification mechanism. Improved techniques for capturing hgcAB and mer presence and diversity are necessary for identifying the major microbial players in environmental Hg cycling. The primary goal of the database Hg-MATE is to provide an up-to-date collated resource of Hg-cycling genes from pure culture and environmental microbial genomes and meta-omic datasets. The current <b>version 1</b> contains an hgcAB dataset with resources for identifying key microbial producers of the toxin MeHg. Future versions  will include a mer gene dataset, which will contain resources for identifying genes of the mer-operon that encode for demethylation of organomercurials (merB), reduction of inorganic Hg(II) (merA), as well as operon regulation (merR), and Hg transport across the cell (merTPC).
 </p>
@@ -23,8 +23,10 @@ The Hg-MATE database v1.01142021 contains:
 The Hg-MATE v1.01142021 was primarily compiled by Caitlin Gionfriddo (Smithsonian Environmental Research Center, USA), Eric Capo (Institut de Ciències del Mar, Barcelona, Spain), and Benjamin Peterson (University of Wisconsin-Madison, USA), with contributions from Heyu Lin (University of Melbourne, Australia), Daniel Jones (New Mexico Institute of Mining and Technology, USA), Andrea García Bravo (Institut de Ciències del Mar, Barcelona, Spain), Stefan Bertilsson (Swedish University of Agricultural Sciences, Uppsala, Sweden), John Moreau (University of Glasgow, UK), Katherine McMahon (University of Wisconsin-Madison, USA), Dwayne Elias (Oak Ridge National Laboratory, USA), and Cynthia Gilmour (Smithsonian Environmental Research Center, USA). This work is an initiative of the <a href="https://ercapo.wixsite.com/meta-hg" target="_blank"><b>Meta-Hg working group</b></a>.
 </p>
 
+## Note
+<p align="justify">The version 1 of Hg-MATE was primarily uploaded on <a href="https://smithsonian.figshare.com/articles/dataset/Hg-MATE-Db_v1_01142021/13105370/1?file=26193689" target="_blank"><b>figshare</b></a>.</p>
+
 ## How to cite us
 <p align="justify">
-Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021 : Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database <a href="https://zenodo.org/record/6687122" target="_blank"><b>doi:10.5281/zenodo.6687122</b></a>
+Gionfriddo, C., Capo, E., Peterson, B., Lin, H., Jones, D., Bravo, AG., Bertilsson, S., Moreau, J., McMahon, K., Elias, D., and Gilmour, C. (2021). Hg-MATE-Db.v1.01142021 : Hg-cycling Microorganisms in Aquatic and Terrestrial Ecosystems Database <a href="https://zenodo.org/record/6687122" target="_blank"><b>doi:10.5281/zenodo.8103735</b></a>
 </p>
-
